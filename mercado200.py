@@ -51,7 +51,7 @@ def maquina_de_escribir(respuesta):
 
 def instrucciones():
     if not os.path.exists("data/instrucciones.txt"):
-        raise FileNotFoundError(f"El archivo {"data/instrucciones.txt"} no existe.")
+        raise FileNotFoundError("El archivo data/instrucciones.txt no existe.")
 
     with codecs.open("data/instrucciones.txt", "r", encoding="utf-8") as f:
         fi = f.read()
